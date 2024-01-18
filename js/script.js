@@ -50,5 +50,5 @@ copoAzul.addEventListener("click", () => {
 });
 
 function redirecionar() {
-  window.open("https://www.starbucks.com.br/", "_blank");
+  window.open("https://www.starbucks.com.br/menu-list", "_blank");
 }
