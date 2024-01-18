@@ -10,7 +10,9 @@
 }
 
 body {
-  padding: 20px 50px;
+  padding: 10px 50px;
+  margin: 0;
+  height: 100vh;
 }
 
 button {
@@ -20,46 +22,58 @@ button {
   border: none;
   border-radius: 20px;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 
-button:hover,
-button:focus {
+button:hover {
   background-color: black;
 }
 
 h1 {
-  font-size: 60px;
-  font-weight: 500;
+  font-size: 50px;
+  font-weight: 700;
 }
 
 p {
   font-size: 16px;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 span {
   color: var(--verde-militar);
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 900;
 }
 
 .logo {
-  width: 80px;
+  width: 70px;
 }
 
 .copo-grande {
-  max-width: 100%;
+  max-width: 85%;
   height: auto;
   z-index: 2;
 }
 
 .copo-pequeno {
-  width: 60px;
+  width: 50px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.copo-pequeno:hover {
+  transform: translateY(-25px);
+}
+
+.copo-reto {
+  margin-bottom: 10px;
+  transform: rotate(-10deg);
 }
 
 .conteudo {
   width: 100%;
+  max-width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -73,10 +87,9 @@ span {
 }
 
 .imagem {
-  width: 600px;
+  width: 380px;
   display: flex;
   justify-content: flex-end;
-  margin-top: 40px;
 }
 
 .menu {
@@ -95,7 +108,7 @@ span {
   z-index: -1;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   h1 {
     font-size: 50px;
     font-weight: 500;
